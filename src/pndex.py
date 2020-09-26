@@ -10,10 +10,9 @@ import time
 
 
 
-modules = glob.glob(os.path.join(os.path.dirname(__file__), "*.py"))
-__all__ = [os.path.basename(f)[:-3] for f in modules if not f.endswith("__init__.py")]
 
-
+modules = glob.glob('*.py')
+__all__ = [os.path.basename(f)[:-3] for f in modules]
 
 
 count=-1
@@ -25,6 +24,8 @@ for i in __all__:
 
 x = y
 
+def testfeature():
+	print()
 
 
 def func_initialize():
@@ -78,7 +79,6 @@ def main_menu():
 def enter_file_to_open():
 	chno = int(input("\n enter file number to open "))
 	os.system('python '+__all__[chno]+".py")
-
 
 
 
@@ -144,6 +144,27 @@ class qutt(Error):
 def quitscreen():
 	raise qutt("quit")
 
+
+def print_all_methods():
+	print(
+			"\ncolorchanger() - to change terminal color"
+			"\nenter_file_to_open() - to open python file in terminal"
+			"\nmain_menu() - to show python files of folder into terminal"
+			"\nreadit() - to read content of file in terminal"
+			"\nopen_in_notepad() - to open file in notepad"
+			"\nopen_in_vscode() - will open selected python file in vs code"
+			"\nreading_read_me() - will show readme of python file that has it"
+			"\ninstall_py__module() - directly download python module"
+			"\ncheck_quality() - check quality of python file"
+			"\nfile_info() - get information about file"
+			"\nclearscreen() - will clear terminal screen"
+			"\nprint_all_methods() - will print all methods"
+			"\n banner() - will print banner"
+			"\n print_options() - will print options"
+			"\n choose_options() = use to choose option"
+		)
+
+
 """
 add below line to your code so it dont execute on import and you can use readme 
 function to view information about it
@@ -192,8 +213,7 @@ def print_options():
  print("9. get file information")
  print("10. clear screen")
  print("11. exit")
-
-
+ print("12. print all option")
 
 
 def choose_options():
@@ -232,6 +252,12 @@ def choose_options():
 
 		if(cho == 11):
 			quitscreen()
+
+		if(cho == 11):
+			quitscreen()
+
+		if(cho == 12):
+			print_all_methods()
 	
 	except qutt:
 		sys.exit(2)

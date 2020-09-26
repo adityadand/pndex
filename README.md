@@ -4,12 +4,12 @@
 >pip install pndex
 
 ## usage :
-> import pndex
-<br>
+> import pndex 
+# ---------------
 > pndex.running()
 
 ### screenshot of the tool
-![Screenshot](pndex.png)
+![Screenshot](https://github.com/adityadand/pndex/blob/master/pndex.png)
 
 ## custom function you can use
 >			colorchanger() - to change console color
@@ -25,5 +25,8 @@
 >			quitscreen() - quit program
 
 ## open this in folder where all .py file exists
+
+# view in github
+> https://github.com/adityadand/pndex
 
 ##### thanks for reading readme

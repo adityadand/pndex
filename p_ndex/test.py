@@ -1,3 +1,0 @@
-import pndex
-
-pndex.running()

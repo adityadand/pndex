@@ -8,7 +8,7 @@ def readme():
 
 setup(
     name="pndex",
-    version="0.1.0",
+    version="0.1.6",
     description="A Python package to manage all python files in a folder at once in console",
     long_description=readme(),
     long_description_content_type="text/markdown",
@@ -21,12 +21,9 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.8",
     ],
-    packages=["py_ndex"],
-    include_package_data=True,
-    install_requires=["os","glob","sys","random","figlet","importlib","pylint","time"],
-    entry_points={
-        "console_scripts": [
-            "pndex=p_nder.pndex:main",
-        ]
-    },
+    py_modules=["pndex"],
+    package_dir={'':'src'},
+    install_requires=['pyfiglet','importlib','pylint'],
+
 )
+
