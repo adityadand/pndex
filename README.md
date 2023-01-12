@@ -7,7 +7,8 @@
 > import pndex 
 # ---------------
 > pndex.running()
-#direct run using
+# ---------------
+# direct run using
 > python -c "import pndex; pndex.running()"
 
 ### screenshot of the tool
