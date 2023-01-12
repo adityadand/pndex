@@ -7,6 +7,10 @@
 > import pndex 
 # ---------------
 > pndex.running()
+# ---------------
+> direct run using
+# ---------------
+> python -c "import pndex; pndex.running()"
 
 ### screenshot of the tool
 ![Screenshot](https://github.com/adityadand/pndex/blob/master/pndex.png)
